@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.Header {
+  background-color: #003f62;
+  padding: 30px;
+}
+
+.Header > img {
+  width: auto;
+}
+
+.search {
+  width: 500px;
+  height: 56px;
+  border: none;
+  outline: none;
+  padding: 0 35px;
+  border-radius: 15px;
+}
+.search-bar {
+  position: relative;
+  left: -60px;
+  width: 140px;
+  color: #fff;
+  height: 57px;
+  border-radius: 15px 15px 15px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #eda415;
+}
+.navbg {
+  background-color: #f4f4f4;
+}
+a {
+  text-decoration: none;
+}
+.cards {
+  height: 180px;
+  width: 400px;
+}
+.para {
+  color: #1b5a7d;
+}
+.right_side{
+  width: 50%;
+}
+.left_side{
+  width: 50%;
+}
