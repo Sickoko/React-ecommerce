@@ -1,6 +1,9 @@
 import React from "react";
 
 class Carousel extends React.Component {
+  handleUpVote(props) {
+    console.log(this.props.id);
+  }
   render() {
     return (
       <div className="carouselCards d-flex justify-content-start align-items-center p-5">
@@ -9,6 +12,9 @@ class Carousel extends React.Component {
           <a
             href="#"
             className="bg-warning rounded-pill p-2 text-white me-3 mt-3 text-decoration-none"
+            onClick={() => {
+              handleUpVote(this.props);
+            }}
           >
             Shop now
           </a>

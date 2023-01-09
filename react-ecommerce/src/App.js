@@ -52,6 +52,7 @@ function App() {
         autoPlayInterval="3000"
         responsive={{
           0: { items: 4 },
+          
         }}
       >
         {popular}
