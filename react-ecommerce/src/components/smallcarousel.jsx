@@ -3,7 +3,7 @@ import React from "react";
 class Small extends React.Component {
   render() {
     return (
-      <div className=" cards d-flex  border border-1 rounded">
+      <div className=" cards d-flex  border border-1 rounded mt-5">
         <div className="left_side">
           <img src={this.props.image} alt={this.props.alt} />
         </div>
