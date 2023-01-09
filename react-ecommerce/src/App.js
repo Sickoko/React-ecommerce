@@ -23,7 +23,7 @@ function App() {
     );
   });
   const carousel = carouselData.map((data) => {
-    return <Carousel image={data.image} title={data.title} />;
+    return <Carousel id={data.id} image={data.image} title={data.title} />;
   });
   const smallcarousel = smallData.map((data) => {
     return <Small title={data.title} count={data.count} image={data.picture} />;
