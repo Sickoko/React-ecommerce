@@ -1,14 +1,14 @@
 import React from "react";
 
 class Carousel extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this)
-  }
-   handleClick(props) {
-    console.log("clicked");
-    console.log(props.id);
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.handleClick = this.handleClick.bind(this)
+  // }
+  //  handleClick(props) {
+  //   console.log("clicked");
+  //   console.log(props.id);
+  // }
   render() {
     return (
       <div className="carouselCards d-flex justify-content-start align-items-center p-5">
@@ -23,9 +23,9 @@ class Carousel extends React.Component {
           <a
             href="#"
             className="btn rounded-pill border border-1 p-2 text-decoration-none"
-            onClick={() => {
-              this.handleClick(this.props);
-            }}
+            // onClick={() => {
+            //   this.handleClick(this.props);
+            // }}
           >
             View more
           </a>
