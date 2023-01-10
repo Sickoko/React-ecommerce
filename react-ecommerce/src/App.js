@@ -31,7 +31,7 @@ function App() {
     return <Small title={data.title} count={data.count} image={data.picture} />;
   });
   const popular = popularData.map((data) => {
-    return <Popular title={data.title} price={data.price} img={data.img} />;
+    return <Popular title={data.title} price={data.price} img={data.img} stars={data.stars} />;
   });
   const topCarousel = CarouselTopData.map((data) => {
     return (
