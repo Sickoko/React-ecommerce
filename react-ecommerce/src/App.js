@@ -8,18 +8,20 @@ import smallData from "./data/smallcarousel";
 import Popular from "./components/popular";
 import CarouselTopData from "./data/CarouselTop";
 import CarouselTop from "./components/Carouseltop";
+import SaleSection from "./components/salesection";
+import saleData from "./data/salesection";
 import "./App.css";
 import popularData from "./data/popular";
 
 function App() {
   const info = information.map((information) => {
     return (
-        <Helpsec
-          help={information.help}
-          ourstore={information.ourstore}
-          track={information.track}
-          logo={information.logo}
-        />
+      <Helpsec
+        help={information.help}
+        ourstore={information.ourstore}
+        track={information.track}
+        logo={information.logo}
+      />
     );
   });
   const carousel = carouselData.map((data) => {
@@ -39,6 +41,15 @@ function App() {
         category2={data.category2}
         category3={data.category3}
         category4={data.category4}
+      />
+    );
+  });
+  const sale = saleData.map((data) => {
+    return (
+      <SaleSection
+        bgimg={data.bgimg}
+        saledesc={data.saledesc}
+        description={data.description}
       />
     );
   });
@@ -73,8 +84,8 @@ function App() {
         disableButtonsControls="true"
       >
         {popular}
-        {popular}
       </AliceCarousel>
+      {sale}
     </div>
   );
 }
