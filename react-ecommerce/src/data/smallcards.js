@@ -15,3 +15,5 @@ const cardsData = [
     productPrice: "$11,70",
   },
 ];
+export default cardsData;
+
