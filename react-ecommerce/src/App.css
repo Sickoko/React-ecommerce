@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -43,18 +44,34 @@ a {
   text-decoration: none;
 }
 .cards {
-  height: 180px;
+  height: 200px;
   width: 400px;
+  margin-left: 150px;
 }
 .para {
   color: #1b5a7d;
 }
-.right_side{
+.right_side {
   width: 50%;
 }
-.left_side{
+.left_side {
   width: 50%;
 }
-h2{
-  color: #1B5A7D;
+h2 {
+  color: #1b5a7d;
+}
+
+.popular_cards {
+  width: 350px;
+}
+.sale {
+  color: #2e8fc5;
+}
+.bgimg {
+  width: 95%;
+  object-fit: cover;
+}
+.rightside {
+  left: 400px;
+  top: 240px;
 }

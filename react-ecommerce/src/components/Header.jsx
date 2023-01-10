@@ -1,11 +1,10 @@
 import React from "react";
-class Header extends React.Component {
-  render() {
+function Header(props){
     return (
       <div>
         <div className="Header mt-3 d-flex justify-content-between">
           <img
-            src={this.props.logo}
+            src={props.logo}
             alt="logo"
             className="img col-md-9 text-start px-3 ms-5 w-25"
           />
@@ -66,5 +65,4 @@ class Header extends React.Component {
       </div>
     );
   }
-}
 export default Header;
