@@ -2,7 +2,6 @@
   text-align: center;
 }
 
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -75,11 +74,26 @@ h2 {
   left: 400px;
   top: 240px;
 }
-.popularcards{
-  color: #003F62;
-} 
+.popularcards {
+  color: #003f62;
+}
 
-.rating{
+.rating {
   margin-top: -25px;
   padding-bottom: 15px;
+}
+.cards {
+  margin-top: 200px;
+  width: 550px;
+  height: auto;
+}
+.background {
+  margin-bottom: 600px;
+}
+.addition {
+  background-color: #e2f4ff;
+  width: 32%;
+}
+.text{
+  line-height: 10px;
 }
