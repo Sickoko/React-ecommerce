@@ -15,6 +15,9 @@
 .Header > img {
   width: auto;
 }
+.outer {
+  width: 1920px;
+}
 
 .search {
   width: 500px;
@@ -67,12 +70,14 @@ h2 {
   color: #2e8fc5;
 }
 .bgimg {
+  position: absolute;
   width: 95%;
   object-fit: cover;
 }
 .rightside {
-  left: 400px;
-  top: 240px;
+  position: relative;
+  top: 150px;
+  margin-left: 600px;
 }
 .popularcards {
   color: #003f62;
@@ -83,17 +88,29 @@ h2 {
   padding-bottom: 15px;
 }
 .cards {
-  margin-top: 200px;
-  width: 550px;
+  margin-top: 500px;
   height: auto;
 }
-.background {
-  margin-bottom: 600px;
+
+.smallCards {
+  width: 50%;
 }
+
 .addition {
   background-color: #e2f4ff;
-  width: 32%;
+  width: 95%;
+  margin-left: 45px;
 }
-.text{
+.text {
   line-height: 10px;
+}
+.titles {
+  color: #003f62;
+}
+
+.price {
+  font-weight: 600;
+}
+.details {
+  width: 50%;
 }

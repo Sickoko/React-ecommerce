@@ -1,19 +1,13 @@
 const cardsData = [
   {
-    productImg: "images/bigspeaker.jpg",
-    productName: "JBL bar 2.1 deep bass",
-    productPrice: "$11,70",
-  },
-  {
-    productImg: "images/controller.jpg",
+    productImg: "images/controller2.jpg",
     productName: "Play game",
     productPrice: "$11,70",
   },
   {
-    productImg: "images/laptop.jpg",
+    productImg: "images/laptop2.jpg",
     productName: "Laptop",
     productPrice: "$11,70",
   },
 ];
 export default cardsData;
-
