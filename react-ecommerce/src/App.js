@@ -18,8 +18,16 @@ import BigCards from "./components/bigcard";
 import bigData from "./data/bigcard";
 import Cards from "./components/smallcards";
 import cardsData from "./data/smallcards";
-import Header from "./components/Header"
-import headerData from "./data/Header"
+import Header from "./components/Header";
+import headerData from "./data/Header";
+import membersData from "./data/members";
+import Members from "./components/members";
+import Brand from "./components/brands";
+import brandData from "./data/brands";
+import Top from "./components/top";
+import topData from "./data/top";
+import BigCarousel from "./components/bigCarousel";
+import bigCarouselData from "./data/bigCarousel";
 function App() {
   const info = information.map((information) => {
     return (
@@ -30,13 +38,9 @@ function App() {
       />
     );
   });
-  const header = headerData.map((data)=>{
-    return(
-      <Header
-      logo={data.logo}
-      />
-    )
-  })
+  const header = headerData.map((data) => {
+    return <Header logo={data.logo} />;
+  });
   const carousel = carouselData.map((data) => {
     return <Carousel id={data.id} image={data.image} title={data.title} />;
   });
@@ -96,7 +100,26 @@ function App() {
       />
     );
   });
-
+  const members = membersData.map((data) => {
+    return <Members img={data.img} text={data.text} name={data.name} />;
+  });
+  const top = topData.map((data) => {
+    return <Top header={data.header} btn={data.btn} />;
+  });
+  const brands = brandData.map((data) => {
+    return <Brand brandLogo={data.brandLogo} />;
+  });
+  const big = bigCarouselData.map((data) => {
+    return (
+      <BigCarousel
+        img={data.img}
+        header={data.header}
+        date={data.date}
+        text={data.text}
+        maker={data.maker}
+      />
+    );
+  });
   return (
     <div className="App">
       {info}
@@ -134,9 +157,33 @@ function App() {
         {card}
         {cards}
       </div>
-      <div className=" addition d-flex p-3 justify-content-evenly rounded-4">
+      <div className=" addition d-flex p-3 justify-content-evenly rounded-4 mb-5 mt-5">
         {addition}
       </div>
+      <AliceCarousel
+        autoPlay
+        autoPlayInterval="3000"
+        responsive={{
+          0: { items: 3 },
+        }}
+        disableButtonsControls="true"
+      >
+        {members}
+      </AliceCarousel>
+      <div className=" brands d-flex justify-content-around p-3 mt-5">
+        {brands}
+      </div>
+      {top}
+      <AliceCarousel
+        autoPlay
+        autoPlayInterval="3000"
+        responsive={{
+          0: { items: 2 },
+        }}
+        disableButtonsControls="true"
+      >
+        {big}
+      </AliceCarousel>
     </div>
   );
 }
