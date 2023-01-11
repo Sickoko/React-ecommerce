@@ -3,7 +3,7 @@ import React from "react";
 function SaleSection(props) {
   return (
     <div>
-      <div className="ms-5">
+      <div className="background ms-5">
         <div className="bgimg position-absolute">
           <img src={props.bgimg} alt="biglaptoppic" className="w-100" />
         </div>

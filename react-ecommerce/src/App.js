@@ -12,7 +12,10 @@ import SaleSection from "./components/salesection";
 import saleData from "./data/salesection";
 import "./App.css";
 import popularData from "./data/popular";
-
+// import Cards from "./components/smallcards";
+// import cardsData from "./data/Smallcards";
+import additionalData from "./data/additional";
+import Additional from "./components/additional";
 function App() {
   const info = information.map((information) => {
     return (
@@ -31,7 +34,14 @@ function App() {
     return <Small title={data.title} count={data.count} image={data.picture} />;
   });
   const popular = popularData.map((data) => {
-    return <Popular title={data.title} price={data.price} img={data.img} stars={data.stars} />;
+    return (
+      <Popular
+        title={data.title}
+        price={data.price}
+        img={data.img}
+        stars={data.stars}
+      />
+    );
   });
   const topCarousel = CarouselTopData.map((data) => {
     return (
@@ -51,6 +61,11 @@ function App() {
         saledesc={data.saledesc}
         description={data.description}
       />
+    );
+  });
+  const addition = additionalData.map((data) => {
+    return (
+      <Additional Icon={data.Icon} text={data.text} moretxt={data.moretxt} />
     );
   });
 
@@ -86,6 +101,10 @@ function App() {
         {popular}
       </AliceCarousel>
       {sale}
+      {/* {cards} */}
+      <div className=" addition d-flex w-100 justify-content-evenly ">
+      {addition}
+      </div>
     </div>
   );
 }

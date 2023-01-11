@@ -11,7 +11,7 @@ const cardsData = [
   },
   {
     productImg: "images/laptop.jpg",
-    productName: "Play game",
+    productName: "Laptop",
     productPrice: "$11,70",
   },
 ];
