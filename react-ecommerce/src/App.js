@@ -12,10 +12,14 @@ import SaleSection from "./components/salesection";
 import saleData from "./data/salesection";
 import "./App.css";
 import popularData from "./data/popular";
-// import Cards from "./components/smallcards";
-// import cardsData from "./data/Smallcards";
 import additionalData from "./data/additional";
 import Additional from "./components/additional";
+import BigCards from "./components/bigcard";
+import bigData from "./data/bigcard";
+import Cards from "./components/smallcards";
+import cardsData from "./data/smallcards";
+import Header from "./components/Header"
+import headerData from "./data/Header"
 function App() {
   const info = information.map((information) => {
     return (
@@ -23,10 +27,16 @@ function App() {
         help={information.help}
         ourstore={information.ourstore}
         track={information.track}
-        logo={information.logo}
       />
     );
   });
+  const header = headerData.map((data)=>{
+    return(
+      <Header
+      logo={data.logo}
+      />
+    )
+  })
   const carousel = carouselData.map((data) => {
     return <Carousel id={data.id} image={data.image} title={data.title} />;
   });
@@ -68,10 +78,29 @@ function App() {
       <Additional Icon={data.Icon} text={data.text} moretxt={data.moretxt} />
     );
   });
+  const card = bigData.map((data) => {
+    return (
+      <BigCards
+        camImg={data.productImg}
+        camName={data.productName}
+        camPrice={data.productPrice}
+      />
+    );
+  });
+  const cards = cardsData.map((data) => {
+    return (
+      <Cards
+        productImg={data.productImg}
+        productName={data.productName}
+        productPrice={data.productPrice}
+      />
+    );
+  });
 
   return (
     <div className="App">
       {info}
+      {header}
       <AliceCarousel
         autoPlay
         autoPlayInterval="3000"
@@ -101,9 +130,12 @@ function App() {
         {popular}
       </AliceCarousel>
       {sale}
-      {/* {cards} */}
-      <div className=" addition d-flex w-100 justify-content-evenly ">
-      {addition}
+      <div className="d-flex mb-5 w-auto">
+        {card}
+        {cards}
+      </div>
+      <div className=" addition d-flex p-3 justify-content-evenly rounded-4">
+        {addition}
       </div>
     </div>
   );

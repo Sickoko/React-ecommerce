@@ -1,6 +1,6 @@
 import React from "react";
 
-function Carousel(props) {
+function Carousell(props) {
   // constructor(props) {
   //   super(props);
   //   this.handleClick = this.handleClick.bind(this)
@@ -36,4 +36,4 @@ function Carousel(props) {
   );
 }
 
-export default Carousel;
+export default Carousell;

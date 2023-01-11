@@ -1,19 +1,5 @@
-import SubMenu from "./Dropdown";
-import { Navbar } from "react-bootstrap";
-import dropdownData from "../data/Dropdown";
-import headerData from "../data/Header";
-import Header from "./Header";
 import React from "react";
 function Helpsec(props) {
-  const subMenus = dropdownData.map((subMenu) => {
-    return (
-      <SubMenu
-        title={subMenu.title}
-        position={subMenu.position}
-        children={subMenu.children}
-      />
-    );
-  });
   return (
     <div>
       <div className="header mt-3 d-flex">
@@ -32,7 +18,7 @@ function Helpsec(props) {
           </svg>
           {props.ourstore}
         </a>
-        <a className="col-md-3 text-center text-decoration-none text-dark pe-3">
+        <a className="col-md-2 text-center text-decoration-none text-dark pe-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -46,10 +32,6 @@ function Helpsec(props) {
           {props.track}
         </a>
       </div>
-      <Header />
-      <Navbar bg="light" className="px-5">
-        {subMenus}
-      </Navbar>
     </div>
   );
 }

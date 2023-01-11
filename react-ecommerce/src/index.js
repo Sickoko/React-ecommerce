@@ -5,8 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import "react-alice-carousel/lib/alice-carousel.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.querySelector('.containerr'));
 root.render(
   <React.StrictMode>
     <App />

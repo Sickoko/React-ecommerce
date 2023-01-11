@@ -1,7 +1,7 @@
 import React from "react";
 function Additional(props) {
   return (
-    <div className="d-flex py-3">
+    <div className="d-flex">
       <img src={props.Icon} alt="logo" className="me-5 "/>
       <div className="text">
         <h2 >{props.text}</h2>

@@ -4,10 +4,10 @@ function SaleSection(props) {
   return (
     <div>
       <div className="background ms-5">
-        <div className="bgimg position-absolute">
+        <div className="bgimg">
           <img src={props.bgimg} alt="biglaptoppic" className="w-100" />
         </div>
-        <div className="rightside position-relative">
+        <div className="rightside ">
           <a
             href=""
             className="text-white bg-warning rounded-pill p-2 px-3 text-decoration-none"
