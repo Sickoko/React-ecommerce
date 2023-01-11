@@ -114,3 +114,36 @@ h2 {
 .details {
   width: 50%;
 }
+.bordered_img {
+  border: 2px dashed #eda415;
+  border-radius: 60%;
+  padding: 5px;
+}
+.text {
+  margin-left: 50px;
+  background: #e2f4ff;
+  width: auto;
+}
+.name {
+  color: #003f62;
+}
+.brands {
+  background: #e2f4ff;
+  width: 95%;
+  margin-left: 50px;
+}
+.date-btn {
+  color: #1b5a7d;
+  font-size: 21px;
+  padding: 5px;
+}
+.txt,
+.maker {
+  color: #003f62;
+}
+.header{
+  font-weight: 600;
+}
+.out{
+  margin: auto;
+}

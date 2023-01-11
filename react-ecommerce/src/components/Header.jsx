@@ -29,7 +29,7 @@ function Header(props) {
             aria-describedby="button-addon2"
           />
           <button
-            className="btn text-white bg-warning"
+            className="btn text-white bg-warning "
             type="button"
             id="button-addon2"
           >
