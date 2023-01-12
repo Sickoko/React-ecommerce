@@ -3,22 +3,20 @@ export default function Footer() {
   return (
     <div className="footer_bg">
       <div>
-        <p> <br /></p>
-        <div className="d-flex justify-content-between bg-white w-75 ms-5 mt-5 p-3 rounded  ">
+        <div className="news-sec d-flex justify-content-between bg-white w-75 p-3 rounded  ">
           <h2>Subscribe newsletter</h2>
-          <a href="" className="bg-warning text-decoration-none text-white p-3">
+          <a
+            href=""
+            className="send_btn text-decoration-none text-white rounded-4  p-3"
+          >
             Email address
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-send"
-              viewBox="0 0 16 16"
-            >
-              <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
-            </svg>{" "}
+            <img src="images/headphone.svg" alt="" className="ps-5 " />
           </a>
+          <img src="images/" alt="" />
+          <p className="phone_num">
+            Call us 24/7: <br />
+            (+62)0123 567 789
+          </p>
         </div>
       </div>
       <div>AAA</div>
