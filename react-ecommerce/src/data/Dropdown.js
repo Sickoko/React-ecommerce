@@ -1,30 +1,5 @@
 const dropdownData = [
-  {
-    title: "Browse Categories",
-    position: 1,
-    children: [
-      {
-        title: "Laptops",
-        position: 1,
-      },
-      {
-        title: "Speakers",
-        position: 2,
-      },
-      {
-        title: "Cameras",
-        position: 3,
-      },
-      {
-        title: "Headphones",
-        position: 4,
-      },
-      {
-        title: "Gaming accessories",
-        position: 5,
-      },
-    ],
-  },
+
   {
     title: "Home",
     position: 2,
