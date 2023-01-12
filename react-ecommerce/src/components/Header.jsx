@@ -78,9 +78,21 @@ function Header(props) {
           </div>
         </div>
       </div>
-      <Navbar bg="light" className="px-5">
-        {subMenus}
-      </Navbar>
+      <div className="navbar-menu">
+        <Navbar bg="light" className="navbar_space px-5 d-flex justify-content-between">
+          <div className="orange">
+            <select className="border border-none ">
+              <option> Browse categories </option>
+              <option>Laptop</option>
+              <option>Camera</option>
+              <option>Desktop</option>
+              <option>Watches</option>
+            </select>
+            </div>
+          {subMenus}
+          <p className="return">30 days free return</p>
+        </Navbar>
+      </div>
     </div>
   );
 }

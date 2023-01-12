@@ -29,7 +29,7 @@ import topData from "./data/top";
 import BigCarousel from "./components/bigCarousel";
 import bigCarouselData from "./data/bigCarousel";
 import Footer from "./components/footer";
-import footerData from "./data/footer"
+import footerData from "./data/footer";
 function App() {
   const info = information.map((information) => {
     return (
@@ -124,7 +124,7 @@ function App() {
   });
   // const footer = footerData.map((data)=>{
   //   <Footer
-    
+
   //   />
   // })
   return (
@@ -191,7 +191,7 @@ function App() {
       >
         {big}
       </AliceCarousel>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

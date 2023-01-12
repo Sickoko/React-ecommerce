@@ -14,7 +14,7 @@ const SubMenu = (props) => {
     );
 
   return (
-    <div className="w-100">
+    <div className="w-auto">
       <div className="navbg">
         <Nav className="me-auto">{subMenu}</Nav>
       </div>
