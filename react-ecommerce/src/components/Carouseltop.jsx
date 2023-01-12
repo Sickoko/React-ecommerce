@@ -4,7 +4,7 @@ function CarouselTop(props) {
   return (
     <div className="d-flex justify-content-between mt-5 ps-3">
       <h2 className="col-md-6 text-start ps-5 pt-3">{props.heading}</h2>
-      <div className="d-flex justify-content-between ">
+      <div className="d-flex justify-content-between me-5 ">
         <a
           href=""
           className="text-decoration-none border border-1 px-3 p-1 rounded-4 align-self-center mx-3 text-dark"

@@ -10,7 +10,7 @@ function Popular(props) {
         <div className="d-block">
           <h5 className=" popularcards text-start ps-3">{props.title} </h5>
           <p className="text-start ps-3 d-flex justify-content-between">
-            {props.price}
+            {props.price} 
             <a
               href=""
               className="cart bg-warning text-light p-2 me-3 rounded-pill text-end"
