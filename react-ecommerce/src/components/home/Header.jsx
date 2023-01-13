@@ -1,7 +1,7 @@
 import React from "react";
 import SubMenu from "./Dropdown";
 import { Navbar } from "react-bootstrap";
-import dropdownData from "../data/Dropdown";
+import dropdownData from "../../data/home/Dropdown";
 function Header(props) {
   const subMenus = dropdownData.map((subMenu) => {
     return (
@@ -33,7 +33,7 @@ function Header(props) {
             type="button"
             id="button-addon2"
           >
-            Button
+            Search
           </button>
         </div>
         <div className="signin d-flex me-5">

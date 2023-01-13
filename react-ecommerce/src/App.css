@@ -2,7 +2,6 @@
   text-align: center;
 }
 
-
 nav {
   display: flex;
   align-items: center;
@@ -14,7 +13,6 @@ nav {
   margin: 0 auto;
 }
 
-
 .navbar {
   gap: 33.09px;
 }
@@ -23,7 +21,6 @@ nav {
   background-color: #003f62;
   padding: 30px;
 }
-
 
 select {
   background-color: #eda415;
@@ -41,8 +38,8 @@ select {
 .outer {
   width: 1920px;
 }
-.navbar_space{
-  display: flex;  
+.navbar_space {
+  display: flex;
   justify-content: space-between;
 }
 
@@ -58,10 +55,10 @@ a {
   color: #1b5a7d;
 }
 .right_side {
-  width: 50%;
+  width: 30%;
 }
 .left_side {
-  width: 50%;
+  width: 70%;
 }
 h2 {
   color: #1b5a7d;
@@ -69,6 +66,9 @@ h2 {
 
 .popular_cards {
   width: 350px;
+}
+.title {
+  color: #1b5a7d;
 }
 .sale {
   color: #2e8fc5;
@@ -165,17 +165,64 @@ h4 {
   font-size: 24px;
   font-weight: 600;
 }
-.news-sec{
+.news-sec {
   margin: 0 auto;
+  width: 85%;
 }
-.phone_num{
+.phone_num {
   color: #606060;
   text-align: start;
 }
-.send_btn{
-  background:  #EDA415;
+.send_btn {
+  background: #eda415;
   width: 500px;
   display: flex;
   justify-content: space-between;
   height: 60px;
+}
+
+.logosec {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-list {
+  margin: 0 auto;
+}
+li > a {
+  text-decoration: none;
+  color: #1b5a7d;
+  font-size: 20px;
+  font-weight: 400;
+}
+ul,li {
+  color: #d9d9d9;
+  margin-top: 10px;
+  text-align: start;
+  margin-left: 15px;
+}
+.address {
+  color: #1b5a7d;
+}
+ul,
+li {
+  line-height: 24.57px;
+}
+.memberstxt {
+  color: #003f62;
+}
+.price {
+  color: #4a4a4a;
+}
+.detail-cont{
+  display: flex;
+  margin: 0 auto;
+}
+.left-side{
+  width: auto;
+  margin: 0 auto;
+}
+.right-side{
+  margin: 0 auto;
+
 }

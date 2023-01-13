@@ -23,6 +23,8 @@ function SaleSection(props) {
             Shop now
           </a>
         </div>
+        <br />
+        <br />
       </div>
     </div>
 
