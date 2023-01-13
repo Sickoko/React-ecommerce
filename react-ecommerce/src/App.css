@@ -195,7 +195,8 @@ li > a {
   font-size: 20px;
   font-weight: 400;
 }
-ul,li {
+ul,
+li {
   color: #d9d9d9;
   margin-top: 10px;
   text-align: start;
@@ -214,15 +215,28 @@ li {
 .price {
   color: #4a4a4a;
 }
-.detail-cont{
+.detail-cont {
   display: flex;
   margin: 0 auto;
 }
-.left-side{
+.left-side {
   width: auto;
   margin: 0 auto;
 }
-.right-side{
+.right-side {
   margin: 0 auto;
-
+}
+.color-sec {
+  background-color: #d0ec48;
+  color: #d0ec48;
+  width: 25px;
+  height: auto;
+  border-radius: 50%;
+}
+.dark-color {
+  background-color: #565656;
+  color: #565656;
+  width: 25px;
+  height: auto;
+  border-radius: 50%;
 }
