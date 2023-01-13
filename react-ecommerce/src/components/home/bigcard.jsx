@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Rating } from "react-simple-star-rating";
-import Cards from "../data/smallcards";
-import cardsData from "../data/smallcards";
+import cardsData from "../../data/home/smallcards";
 
 function BigCards(props) {
   const [stars, setStars] = useState(props.stars);

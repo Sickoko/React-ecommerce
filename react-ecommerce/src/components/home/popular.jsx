@@ -9,7 +9,7 @@ function Popular(props) {
         <img src={props.img} alt="" className="p-3" />
         <div className="d-block">
           <h5 className=" popularcards text-start ps-3">{props.title} </h5>
-          <p className="text-start ps-3 d-flex justify-content-between">
+          <p className="price text-start ps-3 d-flex justify-content-between">
             {props.price} 
             <a
               href=""

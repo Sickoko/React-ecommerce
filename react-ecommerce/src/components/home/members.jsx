@@ -7,7 +7,7 @@ function Members(props) {
         <h5 className="name ms-5 mt-4">{props.name}</h5>
       </div>
       <div className="text  d-flex rounded-3 p-3 mt-3 mx-3">
-        <p>{props.text}</p>
+        <p className="memberstxt">{props.text}</p>
       </div>
     </div>
   );
