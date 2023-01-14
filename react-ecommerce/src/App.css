@@ -214,17 +214,22 @@ li {
 }
 .price {
   color: #4a4a4a;
+  font-size: 29px;
 }
 .detail-cont {
   display: flex;
   margin: 0 auto;
 }
 .left-side {
-  width: auto;
-  margin: 0 auto;
+  margin-left: auto;
 }
 .right-side {
-  margin: 0 auto;
+  margin-right: auto;
+}
+.cart-btn {
+  background: #eda415;
+  font-size: 22px;
+  padding: 10px;
 }
 .color-sec {
   background-color: #d0ec48;
