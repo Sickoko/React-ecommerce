@@ -53,7 +53,7 @@ export default function Main() {
               48
             </a>
           </p>
-          <div className="mt-4">
+          <div className="my-4">
             <a
               href="#"
               className="cart-btn text-decoration-none text-white rounded-pill px-3"
@@ -67,7 +67,7 @@ export default function Main() {
               Buy it now
             </a>
           </div>
-          <hr />g
+          <hr />
         </div>
       </div>
     </div>
