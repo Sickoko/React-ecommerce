@@ -10,7 +10,7 @@ export default function Main() {
         <h2>Play game</h2>
         <p className="price">$11,70</p>
         <Rating />
-        <p>Availability</p>
+        <p className="d-flex"> <strong>Availability: </strong><p className="text-success">In Stock</p></p>
         <p>Hurry up! only 34 product left in stock!</p>
         <hr />
         <p className="d-flex">
@@ -20,10 +20,18 @@ export default function Main() {
         </p>
         <p className="d-flex">
           Size:
-          <a href="" className="ms-3 border border-2 px-3">30</a>
-          <a href="" className="ms-3 border border-2 px-3">30</a>
-          <a href="" className="ms-3 border border-2 px-3">30</a>
-          <a href="" className="ms-3 border border-2 px-3">30</a>
+          <a href="" className="ms-3 border border-2 px-3 text-decoration-none text-dark">
+            30
+          </a>
+          <a href="" className="ms-3 border border-2 px-3 text-decoration-none text-dark">
+            56
+          </a>
+          <a href="" className="ms-3 border border-2 px-3 text-decoration-none text-dark">
+            42
+          </a>
+          <a href="" className="ms-3 border border-2 px-3 text-decoration-none text-dark">
+            48
+          </a>
         </p>
       </div>
     </div>
