@@ -114,6 +114,8 @@ h2 {
 
 .price {
   font-weight: 600;
+  color: #4a4a4a;
+  font-size: 17px;
 }
 .details {
   width: 50%;
@@ -212,7 +214,7 @@ li {
 .memberstxt {
   color: #003f62;
 }
-.price {
+.prices {
   color: #4a4a4a;
   font-size: 29px;
 }
@@ -229,7 +231,18 @@ li {
 .cart-btn {
   background: #eda415;
   font-size: 22px;
-  padding: 10px;
+  font-weight: 600;
+  padding: 15px;
+  text-align: center;
+  padding-left: 33px;
+  padding-right: 33px;
+}
+.heart-btn {
+  margin-left: 30px;
+  color: #000;
+  background-color: #eeeeee;
+  padding: 20px;
+  border-radius: 50%;
 }
 .color-sec {
   background-color: #d0ec48;
@@ -244,4 +257,58 @@ li {
   width: 25px;
   height: auto;
   border-radius: 50%;
+}
+.num {
+  color: #434343;
+  font-size: 18px;
+  font-weight: 500;
+}
+.sale {
+  color: #434343;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.small {
+  border: 1px #c0c0c0 solid;
+}
+.green-txt {
+  color: #30bd56;
+}
+
+.fill-btn {
+  font-size: 21px;
+  font-weight: 500;
+  background: #003f62;
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.normal-btn {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 31.02px;
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.review-btn {
+  background: #003f62;
+  color: #fff;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 500;
+  font-size: 19px;
+}
+.status {
+  font-weight: 400;
+  font-size: 19px;
+  color: #4f4f4f;
+}
+.head {
+  color: #003f62;
+}
+.border-b {
+  width: 95%;
 }
