@@ -124,6 +124,7 @@ function Home() {
   const footer = footerData.map((data) => {
     return <Footer icon={data.icon} />;
   });
+
   return (
     <div className="App">
       {info}
