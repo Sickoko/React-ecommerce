@@ -3,8 +3,6 @@ import { Rating } from "react-simple-star-rating";
 import cardData from "../../data/detail/cards";
 import Card from "./cards";
 import Top from "./producttop";
-import Footer from "../home/footer";
-import footerData from "../../data/home/footer";
 export default function Main(props) {
   const card = cardData.map((data) => {
     return (
@@ -15,10 +13,6 @@ export default function Main(props) {
         pic={data.pic}
       />
     );
-  });
-
-  const footer = footerData.map((data) => {
-    return <Footer icon={data.icon} />;
   });
 
   return (
@@ -171,7 +165,6 @@ export default function Main(props) {
       <div>
         <div className="d-flex mb-5">{card}</div>
       </div>
-      {footer}
     </div>
   );
 }

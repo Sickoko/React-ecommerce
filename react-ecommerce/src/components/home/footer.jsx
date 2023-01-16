@@ -32,7 +32,7 @@ export default function Footer(props) {
           </li>
           <hr />
           <li className="d-flex text-start">
-            <img src="images/vector.svg" alt="" />
+            <img src="images/google.svg " alt="" />
             <img src="images/facebook.svg" alt="" className="ps-5" />
             <img src="images/whatsapp.svg" alt="" className="ps-5" />
           </li>
