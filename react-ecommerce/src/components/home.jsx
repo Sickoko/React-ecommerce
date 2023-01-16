@@ -29,19 +29,20 @@ import BigCarousel from "./home/bigCarousel";
 import bigCarouselData from "../data/home/bigCarousel";
 import Footer from "./home/footer";
 import footerData from "../data/home/footer";
+
 function Home() {
-  const info = information.map((information) => {
-    return (
-      <Helpsec
-        help={information.help}
-        ourstore={information.ourstore}
-        track={information.track}
-      />
-    );
-  });
-  const header = headerData.map((data) => {
-    return <Header logo={data.logo} />;
-  });
+  // const info = information.map((information) => {
+  //   return (
+  //     <Helpsec
+  //       help={information.help}
+  //       ourstore={information.ourstore}
+  //       track={information.track}
+  //     />
+  //   );
+  // });
+  // const header = headerData.map((data) => {
+  //   return <Header logo={data.logo} />;
+  // });
   const carousel = carouselData.map((data) => {
     return <Carousel id={data.id} image={data.image} title={data.title} />;
   });
@@ -121,14 +122,14 @@ function Home() {
       />
     );
   });
-  const footer = footerData.map((data) => {
-    return <Footer icon={data.icon} />;
-  });
+  // const footer = footerData.map((data) => {
+  //   return <Footer icon={data.icon} />;
+  // });
 
   return (
     <div className="App">
-      {info}
-      {header}
+      {/* {info}
+      {header} */}
       <AliceCarousel
         autoPlay
         autoPlayInterval="3000"
@@ -190,7 +191,7 @@ function Home() {
       >
         {big}
       </AliceCarousel>
-      {footer}
+      {/* {footer} */}
     </div>
   );
 }

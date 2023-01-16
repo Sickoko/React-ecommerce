@@ -14,7 +14,7 @@ function SaleSection(props) {
           >
             New Laptop
           </a>
-          <h1 className="sale mt-3">{props.saledesc}</h1>
+          <h1 className="sale-info mt-3">{props.saledesc}</h1>
           <p className="text-white mt-3 mb-3">{props.description}</p>
           <a
             href=""

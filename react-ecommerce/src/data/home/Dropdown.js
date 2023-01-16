@@ -1,5 +1,4 @@
 const dropdownData = [
-
   {
     title: "Home",
     position: 2,
@@ -42,12 +41,8 @@ const dropdownData = [
     position: 5,
     children: [
       {
-        title: "Pages Children 1",
+        title: "Detail",
         position: 1,
-      },
-      {
-        title: "Pages Children 2",
-        position: 2,
       },
     ],
   },
@@ -56,7 +51,6 @@ const dropdownData = [
     position: 6,
     children: [],
   },
-
 ];
 
 export default dropdownData;
