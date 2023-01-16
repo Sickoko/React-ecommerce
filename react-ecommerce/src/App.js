@@ -3,7 +3,7 @@ import Home from "./components/home";
 import Main from "./components/detail/main";
 import detailData from "./data/detail/Detail";
 import Detail from "./components/detail";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import headerData from "./data/home/Header";
 import Header from "./components/home/Header";
 import information from "./data/home/Seed";
@@ -41,14 +41,15 @@ function App() {
   });
   return (
     <div className="App">
-      {info}
-      {header}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/detail" element={<Detail />} />
-      </Routes>
-      <Signup />
-      {footer}
+      <div>
+        {info}
+        {header}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/detail" element={<Detail />} />
+        </Routes>
+        {footer}
+      </div>
     </div>
   );
 }
