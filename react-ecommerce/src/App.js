@@ -11,6 +11,7 @@ import Helpsec from "./components/home/Helpsection";
 import footerData from "./data/home/footer";
 import Footer from "./components/home/footer";
 import Signup from "./components/signup";
+import { useState } from "react";
 function App() {
   const main = detailData.map((data) => {
     return (
@@ -33,12 +34,16 @@ function App() {
       />
     );
   });
+  const [wishlist, setWishlist] = useState([]);
   const header = headerData.map((data) => {
-    return <Header logo={data.logo} />;
+    return (
+      <Header logo={data.logo} wishlist={wishlist} setWishlist={setWishlist} />
+    );
   });
   const footer = footerData.map((data) => {
     return <Footer icon={data.icon} />;
   });
+
   return (
     <div className="App">
       <div>
