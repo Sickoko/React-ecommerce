@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Rating } from "react-simple-star-rating";
 import { useParams } from "react-router-dom";
 import popularData from "../../data/home/popular";
+import { Heart } from "react-bootstrap-icons";
 function Popular(props) {
   const [stars, setStars] = useState(props.stars);
   const { id } = useParams();
@@ -48,7 +49,6 @@ function Popular(props) {
           ) : (
             <i className="heart outline icon"></i>
           )}
-          >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
